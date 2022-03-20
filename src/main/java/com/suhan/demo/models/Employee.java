@@ -20,5 +20,7 @@ public class Employee {
 
     }
 
-
+    public String printEmployee() {
+        return "Firstname=" + FirstName + ", Surname=" + SurName + ", EmailAddress=" + EmailAddress;
+    }
 }
