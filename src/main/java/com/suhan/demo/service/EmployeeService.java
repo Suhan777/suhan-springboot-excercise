@@ -1,5 +1,7 @@
 package com.suhan.demo.service;
 
+import java.util.List;
+
 import com.suhan.demo.models.Employee;
 import com.suhan.demo.repository.EmployeeRepository;
 
@@ -16,5 +18,9 @@ public class EmployeeService {
 
     public void createEmployee(Employee employee) {
         employeeRepository.save(employee);
+    }
+
+    public List<Employee> getAllEmployeeInfo() {
+        return employeeRepository.findAll();
     }
 }
