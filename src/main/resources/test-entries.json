@@ -1,12 +1,17 @@
 [
     {
-        "FirstName": "John",
-        "SurName": "Doe",
-        "EmailAddress": "johndoe@gmail.com"
+        "firstName": "John",
+        "surName": "Doe",
+        "emailAddress": "johndoe@gmail.com"
     },
     {
-        "FirstName": "stewart",
-        "SurName": "joe",
-        "EmailAddress": "johndoe2@gmail.com"
+        "firstName": "John",
+        "surName": "Doe",
+        "emailAddress": "johndoe3@gmail.com"
+    },
+    {
+        "firstName": "stewart",
+        "surName": "joe",
+        "emailAddress": "johndoe2@gmail.com"
     }
 ]

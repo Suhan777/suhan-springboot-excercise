@@ -13,14 +13,14 @@ import lombok.Setter;
 @AllArgsConstructor
 @Document(collection = "tester")
 public class Employee {
-    private String FirstName;
-    private String SurName;
-    private String EmailAddress;
+    private String firstName;
+    private String surName;
+    private String emailAddress;
 
     // Overriding toString method. toString method is used to print the object in
     // console.
     @Override
     public String toString() {
-        return "Firstname=" + FirstName + ", Surname=" + SurName + ", EmailAddress=" + EmailAddress;
+        return "firstName=" + firstName + ", surName=" + surName + ", emailAddress=" + emailAddress;
     }
 }

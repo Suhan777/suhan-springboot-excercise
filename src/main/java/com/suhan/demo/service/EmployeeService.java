@@ -1,6 +1,9 @@
 package com.suhan.demo.service;
 
+import java.util.Arrays;
 import java.util.List;
+
+import javax.annotation.PostConstruct;
 
 import com.suhan.demo.models.Employee;
 import com.suhan.demo.repository.EmployeeRepository;
@@ -23,4 +26,9 @@ public class EmployeeService {
     public List<Employee> getAllEmployeeInfo() {
         return employeeRepository.findAll();
     }
+
+    public List<Employee> getEmployee(String name) {
+        return employeeRepository.findBy(name);
+    }
+
 }
