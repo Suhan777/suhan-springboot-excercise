@@ -9,8 +9,7 @@ import org.springframework.data.mongodb.repository.Query;
 
 public interface EmployeeRepository extends MongoRepository<Employee, String> {
 
-    @Query("{'FirstName': ?0}")
-    public List<Employee> findBy(String FirstName);
+    @Query("{'surName': ?0}")
+    public List<Employee> findBy(String surName);
 
-    public void insert(Employee[] employees);
 }

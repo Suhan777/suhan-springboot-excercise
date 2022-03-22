@@ -1,9 +1,6 @@
 package com.suhan.demo.service;
 
-import java.util.Arrays;
 import java.util.List;
-
-import javax.annotation.PostConstruct;
 
 import com.suhan.demo.models.Employee;
 import com.suhan.demo.repository.EmployeeRepository;
@@ -19,8 +16,12 @@ public class EmployeeService {
         this.employeeRepository = employeeRepository;
     }
 
-    public void createEmployee(Employee employee) {
-        employeeRepository.save(employee);
+    public Employee createEmployee(Employee employee) {
+        return employeeRepository.save(employee);
+    }
+
+    public List<Employee> createEmployees(List<Employee> employees) {
+        return employeeRepository.saveAll(employees);
     }
 
     public List<Employee> getAllEmployeeInfo() {
