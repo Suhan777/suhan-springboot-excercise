@@ -63,9 +63,9 @@ public class EmployeeController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/{employeeSurname}")
-    public Object getEmployee(@PathVariable String employeeName) {
-        logger.info("Getting " + employeeName + " employee info");
-        List<Employee> employee = employeeService.getEmployee(employeeName);
+    public Object getEmployee(@PathVariable String employeeSurname) {
+        logger.info("Getting " + employeeSurname + " employee info");
+        List<Employee> employee = employeeService.getEmployee(employeeSurname);
         if (employee.size() > 0) {
             logger.info("Employee info: {}", Arrays.toString((employee).toArray()));
             return employee;
